@@ -1,4 +1,3 @@
-
 plugins {
     id("com.android.application")
     id ("com.google.gms.google-services")
@@ -42,7 +41,8 @@ dependencies {
     implementation ("com.google.firebase:firebase-core:15.0.2") /*same as below*, changed analytics to core*/
     implementation("com.google.firebase:firebase-ml-vision:15.0.0") /*pasted from doc no version provided there*/
     testImplementation("junit:junit:4.13.2")
-    implementation ("com.google.firebase:firebase-ml-vision:24.0.1")
+    implementation ("com.google.firebase:firebase-ml-vision-image-label-model:200.1")// For text recognition
+
     implementation ("com.google.android.gms:play-services-mlkit-text-recognition:24.0.1")
 
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
